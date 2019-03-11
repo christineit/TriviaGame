@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin|Notable|Inconsolata|Nunito|Nunito+Sans|Pacifico|Quicksand|Rubik|VT323"
+      rel="stylesheet"
+    />
+    <title>Windy City Trivia!</title>
+  </head>
+  <body>
+    <div id="screen1" class="main-section">
+      <h1 id="title">Windy City Trivia!</h1>
+      <hr />
+      <div id="wrapper">
+        <div id="timer" class="font"></div>
+        <div id="quiz" class="font"></div>
+        <div id="answers" class="font"></div>
+        <button id="start" type="button" class="btn btn-danger btn-lg">
+          Start!
+        </button>
+        <!-- <button id="reset" type="button" class="btn btn-danger btn-lg">
+        Play!
+      </button> -->
+        <!-- reset button needs to be set with jQuery data- -->
+        <div id="results" class="font"></div>
+      </div>
+    </div>
+    <iframe
+      src="assets/audio/Kanye West - Homecoming.mp3"
+      allow="autoplay"
+      style="display:none"
+      id="iframeAudio"
+    >
+      Your browser does not support the audio element.
+    </iframe>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script type="text/javascript" src="./assets/javascript/app.js"></script>
+</html>
